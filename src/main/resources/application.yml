@@ -1,0 +1,13 @@
+server:
+    port: 8880
+spring:
+    application:
+        name: config_server
+    cloud:
+        config:
+            server:
+                git:
+                    uri: git@github.com:rscai/config-repo-dev.git
+management:
+    security:
+        enabled: false
